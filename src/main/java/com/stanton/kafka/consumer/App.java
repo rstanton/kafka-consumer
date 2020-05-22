@@ -3,6 +3,7 @@
  */
 package com.stanton.kafka.consumer;
 
+import java.util.logging.Level;
 import java.time.Duration;
 import java.util.Arrays;
 import java.util.List;
@@ -18,19 +19,27 @@ import org.apache.kafka.clients.consumer.ConsumerRecords;
 import org.apache.kafka.clients.consumer.KafkaConsumer;
 import org.apache.kafka.common.PartitionInfo;
 
+
 public class App {
 	private static final Logger logger = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
+	private String bsServers;
+	
 	private String id;
 	
 	public App(String consumerId) {
 		this.id = consumerId;
+		bsServers = System.getenv("KAFKA_BOOTSTRAP_SERVERS");
+		
+		if(bsServers==null) {
+			logger.log(Level.SEVERE, "KAFKA_BOOTSTRAP_SERVERS environment variable NOT set");
+		}
 	}
 	
     public void run() {logger.info("Polling for records");
     	try {
   		
 	    	 Properties props = new Properties();
-	    	 props.setProperty("bootstrap.servers", "localhost:29092");
+	    	 props.setProperty("bootstrap.servers", bsServers);
 	    	 props.setProperty("group.id", id);
 	    	 props.setProperty("request.timeout.ms", "30000");
 	         props.setProperty("enable.auto.commit", "true");
