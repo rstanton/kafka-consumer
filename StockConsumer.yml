@@ -1,0 +1,7 @@
+bootstrapBrokers: localhost:29092
+topic: stock
+consumerGroup: stock
+server:
+  applicationConnectors:
+    - type: http
+      port: 9000

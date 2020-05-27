@@ -29,12 +29,82 @@
 	<classpathentry kind="con" path="org.eclipse.buildship.core.gradleclasspathcontainer"/>
 	<classpathentry kind="output" path="bin/default"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-11/"/>
+	<classpathentry sourcepath="/home/ross/.gradle/caches/modules-2/files-2.1/io.dropwizard/dropwizard-core/2.0.10/249ec4efd5e22b125966cd7db7403e086985b04b/dropwizard-core-2.0.10-sources.jar" kind="lib" path="/home/ross/.gradle/caches/modules-2/files-2.1/io.dropwizard/dropwizard-core/2.0.10/4bede6f0893b44c26ac442e95f8ae9cc7aaab9a6/dropwizard-core-2.0.10.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/ross/.gradle/caches/modules-2/files-2.1/io.dropwizard/dropwizard-configuration/2.0.10/5909fdef886e9ce20f34c4708254a1540f291ba0/dropwizard-configuration-2.0.10-sources.jar" kind="lib" path="/home/ross/.gradle/caches/modules-2/files-2.1/io.dropwizard/dropwizard-configuration/2.0.10/2eb8fe1d76d4a51170a2cb269b9bdb304e1122e2/dropwizard-configuration-2.0.10.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/ross/.gradle/caches/modules-2/files-2.1/io.dropwizard/dropwizard-jersey/2.0.10/cb3ea9092e4348415ba62caa4e0a1c1affc75b2c/dropwizard-jersey-2.0.10-sources.jar" kind="lib" path="/home/ross/.gradle/caches/modules-2/files-2.1/io.dropwizard/dropwizard-jersey/2.0.10/cd586d6fc80e82e0dbae96bbf6a96c6a0225fb2f/dropwizard-jersey-2.0.10.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/ross/.gradle/caches/modules-2/files-2.1/io.dropwizard/dropwizard-jetty/2.0.10/b64b01ac09a96f093a7594c3e6d11287010d34f1/dropwizard-jetty-2.0.10-sources.jar" kind="lib" path="/home/ross/.gradle/caches/modules-2/files-2.1/io.dropwizard/dropwizard-jetty/2.0.10/17765b7ee9b2c828da1648ad52ccf5ed303049d8/dropwizard-jetty-2.0.10.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/ross/.gradle/caches/modules-2/files-2.1/io.dropwizard/dropwizard-request-logging/2.0.10/5366bae77609c2565b7526d9ef1c866628f5de9e/dropwizard-request-logging-2.0.10-sources.jar" kind="lib" path="/home/ross/.gradle/caches/modules-2/files-2.1/io.dropwizard/dropwizard-request-logging/2.0.10/6a70b01effe8a5f469527f442dd37efd31f99faa/dropwizard-request-logging-2.0.10.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/ross/.gradle/caches/modules-2/files-2.1/io.dropwizard/dropwizard-logging/2.0.10/c1d7f5042d379312409ee30311acdf4a30a568a1/dropwizard-logging-2.0.10-sources.jar" kind="lib" path="/home/ross/.gradle/caches/modules-2/files-2.1/io.dropwizard/dropwizard-logging/2.0.10/7968be9cb41c831d66ed26d2b488356a41ce6081/dropwizard-logging-2.0.10.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/ross/.gradle/caches/modules-2/files-2.1/io.dropwizard/dropwizard-metrics/2.0.10/616ace8718e2939503013fbaa89a327dc6e2d38a/dropwizard-metrics-2.0.10-sources.jar" kind="lib" path="/home/ross/.gradle/caches/modules-2/files-2.1/io.dropwizard/dropwizard-metrics/2.0.10/30a815c650ad3f8a7ca157e97090012630f4d974/dropwizard-metrics-2.0.10.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/ross/.gradle/caches/modules-2/files-2.1/io.dropwizard/dropwizard-jackson/2.0.10/4412f8ea22b60196ae04cbe0c276c265a7b7f49b/dropwizard-jackson-2.0.10-sources.jar" kind="lib" path="/home/ross/.gradle/caches/modules-2/files-2.1/io.dropwizard/dropwizard-jackson/2.0.10/21228eaa58ec34465dc38dce2e406c0a13264d0e/dropwizard-jackson-2.0.10.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/ross/.gradle/caches/modules-2/files-2.1/io.dropwizard/dropwizard-validation/2.0.10/34c905ee0e90e3ebf1a13359e3a5a0f8a81bba40/dropwizard-validation-2.0.10-sources.jar" kind="lib" path="/home/ross/.gradle/caches/modules-2/files-2.1/io.dropwizard/dropwizard-validation/2.0.10/d7f7135c9099af5322035e4903d071a00f88d307/dropwizard-validation-2.0.10.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/ross/.gradle/caches/modules-2/files-2.1/io.dropwizard/dropwizard-servlets/2.0.10/5e08a23ec56686aa4b1fd25cf1dafde8e48b2c50/dropwizard-servlets-2.0.10-sources.jar" kind="lib" path="/home/ross/.gradle/caches/modules-2/files-2.1/io.dropwizard/dropwizard-servlets/2.0.10/e401df27711d6f1d80808310995d74bbd1b05357/dropwizard-servlets-2.0.10.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/ross/.gradle/caches/modules-2/files-2.1/io.dropwizard/dropwizard-lifecycle/2.0.10/c2cda608219bb67a7fd371da53e91f8c5772a80/dropwizard-lifecycle-2.0.10-sources.jar" kind="lib" path="/home/ross/.gradle/caches/modules-2/files-2.1/io.dropwizard/dropwizard-lifecycle/2.0.10/2f4d7489e3d0f677a47275be7afa53a761c370fa/dropwizard-lifecycle-2.0.10.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/ross/.gradle/caches/modules-2/files-2.1/io.dropwizard/dropwizard-util/2.0.10/969183d5bdc1adc24654fb1087cb8bf0b7897f03/dropwizard-util-2.0.10-sources.jar" kind="lib" path="/home/ross/.gradle/caches/modules-2/files-2.1/io.dropwizard/dropwizard-util/2.0.10/8f6c85a6330ba666c0da2f3c75f9a6b46a0220cb/dropwizard-util-2.0.10.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/ross/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.datatype/jackson-datatype-guava/2.10.4/bb61cf6b3762bf050e635e8b30810845e4a35fdd/jackson-datatype-guava-2.10.4-sources.jar" kind="lib" path="/home/ross/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.datatype/jackson-datatype-guava/2.10.4/4a542ec05403d2c99ea248fe9bd89e654bdcaf0b/jackson-datatype-guava-2.10.4.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry sourcepath="/home/ross/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/28.2-jre/79474f7d08b9a8d03f827161825711d9d62ef09a/guava-28.2-jre-sources.jar" kind="lib" path="/home/ross/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/28.2-jre/8ec9ed76528425762174f0011ce8f74ad845b756/guava-28.2-jre.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
 	<classpathentry sourcepath="/home/ross/.gradle/caches/modules-2/files-2.1/org.apache.kafka/kafka-clients/2.5.0/a5dae4cb2453063376a58be3a3771c4be087888d/kafka-clients-2.5.0-sources.jar" kind="lib" path="/home/ross/.gradle/caches/modules-2/files-2.1/org.apache.kafka/kafka-clients/2.5.0/dd97db58ba8dd184028e9dd5d7934dd654942232/kafka-clients-2.5.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/ross/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.8.6/1b9adea7bbe0b251818f42fde0bd2988d7e5f20a/gson-2.8.6-sources.jar" kind="lib" path="/home/ross/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.8.6/9180733b7df8542621dc12e21e87557e8c99b8cb/gson-2.8.6.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
@@ -54,7 +124,12 @@
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry sourcepath="/home/ross/.gradle/caches/modules-2/files-2.1/org.checkerframework/checker-qual/2.10.0/e9cee84e891492970403d8bd7281dadeaaf11dd/checker-qual-2.10.0-sources.jar" kind="lib" path="/home/ross/.gradle/caches/modules-2/files-2.1/org.checkerframework/checker-qual/2.10.0/5786699a0cb71f9dc32e6cca1d665eef07a0882f/checker-qual-2.10.0.jar">
+	<classpathentry sourcepath="/home/ross/.gradle/caches/modules-2/files-2.1/com.github.ben-manes.caffeine/caffeine/2.8.4/86f2320bf20af3c6c5258caf4565fd1e01b10002/caffeine-2.8.4-sources.jar" kind="lib" path="/home/ross/.gradle/caches/modules-2/files-2.1/com.github.ben-manes.caffeine/caffeine/2.8.4/e5730b11981406faa28e0912405a0ce7c2d0f377/caffeine-2.8.4.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/ross/.gradle/caches/modules-2/files-2.1/org.checkerframework/checker-qual/3.4.0/dec6f0b4a484bf40abee4b7d1a8aa60ec0dc64/checker-qual-3.4.0-sources.jar" kind="lib" path="/home/ross/.gradle/caches/modules-2/files-2.1/org.checkerframework/checker-qual/3.4.0/36830784bdefda6dcf8fc217e0416d8291bfe7fa/checker-qual-3.4.0.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
@@ -84,7 +159,362 @@
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry sourcepath="/home/ross/.gradle/caches/modules-2/files-2.1/io.dropwizard.metrics/metrics-jetty9/4.1.9/871aa61e69ca5d8b176cdff51740160d793ae593/metrics-jetty9-4.1.9-sources.jar" kind="lib" path="/home/ross/.gradle/caches/modules-2/files-2.1/io.dropwizard.metrics/metrics-jetty9/4.1.9/1becbf38d92c3dccb64680664d5055bde6b4a443/metrics-jetty9-4.1.9.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/ross/.gradle/caches/modules-2/files-2.1/io.dropwizard.metrics/metrics-servlets/4.1.9/860559ad04760a5535804862a81c366866cfbf23/metrics-servlets-4.1.9-sources.jar" kind="lib" path="/home/ross/.gradle/caches/modules-2/files-2.1/io.dropwizard.metrics/metrics-servlets/4.1.9/322bd80a5a67e67cfb51108129e6e2e0c186bb82/metrics-servlets-4.1.9.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/ross/.gradle/caches/modules-2/files-2.1/io.dropwizard.metrics/metrics-jvm/4.1.9/38670100a4eebb5a0ef4f40f219f8980469b6207/metrics-jvm-4.1.9-sources.jar" kind="lib" path="/home/ross/.gradle/caches/modules-2/files-2.1/io.dropwizard.metrics/metrics-jvm/4.1.9/266fc9b846e6ba72045efff03f37b31e6c6b7b2b/metrics-jvm-4.1.9.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/ross/.gradle/caches/modules-2/files-2.1/io.dropwizard.metrics/metrics-jmx/4.1.9/caf357737124f2d9fe44f12a47a02f2f8cdd090b/metrics-jmx-4.1.9-sources.jar" kind="lib" path="/home/ross/.gradle/caches/modules-2/files-2.1/io.dropwizard.metrics/metrics-jmx/4.1.9/94978c59e6e883b32eb3024d1f4668a09b0777af/metrics-jmx-4.1.9.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/ross/.gradle/caches/modules-2/files-2.1/io.dropwizard.metrics/metrics-logback/4.1.9/90516adeb0cda037f3810fabe42f443827d4cf0f/metrics-logback-4.1.9-sources.jar" kind="lib" path="/home/ross/.gradle/caches/modules-2/files-2.1/io.dropwizard.metrics/metrics-logback/4.1.9/c4f1d3ee3ca71e1668b34aa98f97b907362fc67/metrics-logback-4.1.9.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/ross/.gradle/caches/modules-2/files-2.1/io.dropwizard.metrics/metrics-jersey2/4.1.9/d497619ace20f77c1562885db0c311aedf1e0bda/metrics-jersey2-4.1.9-sources.jar" kind="lib" path="/home/ross/.gradle/caches/modules-2/files-2.1/io.dropwizard.metrics/metrics-jersey2/4.1.9/5ad34fced72a7f720705ed71ce3168bddd4ab977/metrics-jersey2-4.1.9.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/ross/.gradle/caches/modules-2/files-2.1/io.dropwizard.metrics/metrics-json/4.1.9/8347f69457a3bcd9bc6f11b0a6a2256dc5bb8512/metrics-json-4.1.9-sources.jar" kind="lib" path="/home/ross/.gradle/caches/modules-2/files-2.1/io.dropwizard.metrics/metrics-json/4.1.9/f88250b9273eb23d5261482282f10b1f88edef1b/metrics-json-4.1.9.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/ross/.gradle/caches/modules-2/files-2.1/io.dropwizard.metrics/metrics-core/4.1.9/e44fe536f7022c4372f28916f9e2ebe57d92790/metrics-core-4.1.9-sources.jar" kind="lib" path="/home/ross/.gradle/caches/modules-2/files-2.1/io.dropwizard.metrics/metrics-core/4.1.9/dd76a62b007ffea9e6aba10f64c04173ef65f895/metrics-core-4.1.9.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/ross/.gradle/caches/modules-2/files-2.1/io.dropwizard.metrics/metrics-healthchecks/4.1.9/a93d5a10549c4f326902d50c52ca1a0653306c6d/metrics-healthchecks-4.1.9-sources.jar" kind="lib" path="/home/ross/.gradle/caches/modules-2/files-2.1/io.dropwizard.metrics/metrics-healthchecks/4.1.9/a2c68fb5f19549db392e27ca20ddaa90a36f66d7/metrics-healthchecks-4.1.9.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/ross/.gradle/caches/modules-2/files-2.1/org.slf4j/jul-to-slf4j/1.7.30/f9e7f2ae73c3ef9c375a325cea1ef1dcc2613579/jul-to-slf4j-1.7.30-sources.jar" kind="lib" path="/home/ross/.gradle/caches/modules-2/files-2.1/org.slf4j/jul-to-slf4j/1.7.30/d58bebff8cbf70ff52b59208586095f467656c30/jul-to-slf4j-1.7.30.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/ross/.gradle/caches/modules-2/files-2.1/io.dropwizard.metrics/metrics-annotation/4.1.9/386569fed0f76fb8e1941dc8a2f77624bb18ff8e/metrics-annotation-4.1.9-sources.jar" kind="lib" path="/home/ross/.gradle/caches/modules-2/files-2.1/io.dropwizard.metrics/metrics-annotation/4.1.9/da002a1fc65f8105ba25dc18b55f0453f5a0ab1a/metrics-annotation-4.1.9.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry sourcepath="/home/ross/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.30/71a1fdefa224da50f1db6306ce609981e20186c9/slf4j-api-1.7.30-sources.jar" kind="lib" path="/home/ross/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.30/b5a4b6d16ab13e34a88fae84c35cd5d68cac922c/slf4j-api-1.7.30.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/ross/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-classic/1.2.3/cfd5385e0c5ed1c8a5dce57d86e79cf357153a64/logback-classic-1.2.3-sources.jar" kind="lib" path="/home/ross/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-classic/1.2.3/7c4f3c474fb2c041d8028740440937705ebb473a/logback-classic-1.2.3.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/ross/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/2.10.4/4da42585005906e6e5e6d6f0976138c0c09c3d1a/jackson-datatype-jsr310-2.10.4-sources.jar" kind="lib" path="/home/ross/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/2.10.4/de00203e6fee3493c8978a0064a3dda2e8373545/jackson-datatype-jsr310-2.10.4.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/ross/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/2.10.4/c768b8bd2d9cb455610be865384ae093ca7a1397/jackson-datatype-jdk8-2.10.4-sources.jar" kind="lib" path="/home/ross/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/2.10.4/e3ce6f756d4d7ec6f4272212eb3f25bdea71d89f/jackson-datatype-jdk8-2.10.4.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/ross/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.module/jackson-module-parameter-names/2.10.4/5bc8082ef2d1529b18e1741d24b1abeb9b5b6598/jackson-module-parameter-names-2.10.4-sources.jar" kind="lib" path="/home/ross/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.module/jackson-module-parameter-names/2.10.4/9949c4f451bdadea63979f5714d19ace937c2ed3/jackson-module-parameter-names-2.10.4.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/ross/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.module/jackson-module-afterburner/2.10.4/27ec782934b99432005d09e3e6c654b8410e69c/jackson-module-afterburner-2.10.4-sources.jar" kind="lib" path="/home/ross/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.module/jackson-module-afterburner/2.10.4/fabaa927b0faf92f544927ee18c995b4e32bcf37/jackson-module-afterburner-2.10.4.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/ross/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.datatype/jackson-datatype-joda/2.10.4/6092b7f67bbe86f37d6e89994df6aa262ee76de1/jackson-datatype-joda-2.10.4-sources.jar" kind="lib" path="/home/ross/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.datatype/jackson-datatype-joda/2.10.4/6a4be5e8ecd82b32af83c094682e39b2d0f043dd/jackson-datatype-joda-2.10.4.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/ross/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.dataformat/jackson-dataformat-yaml/2.10.4/d752f41786cc04fca84c566ebef7a101254a624a/jackson-dataformat-yaml-2.10.4-sources.jar" kind="lib" path="/home/ross/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.dataformat/jackson-dataformat-yaml/2.10.4/8a7f3c6b640bd89214807af6d8160b4b3b16af93/jackson-dataformat-yaml-2.10.4.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/ross/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.jaxrs/jackson-jaxrs-json-provider/2.10.4/6d227fa2f91d05d20ea326d95cf9d41cd7fe7ff/jackson-jaxrs-json-provider-2.10.4-sources.jar" kind="lib" path="/home/ross/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.jaxrs/jackson-jaxrs-json-provider/2.10.4/fa8efc89a9dc961027018dcaa240f26b67a9d868/jackson-jaxrs-json-provider-2.10.4.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/ross/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.jaxrs/jackson-jaxrs-base/2.10.4/332e236b51c19a70420aa12bac078187ec3b9d38/jackson-jaxrs-base-2.10.4-sources.jar" kind="lib" path="/home/ross/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.jaxrs/jackson-jaxrs-base/2.10.4/18faa42bacc981a941bb83b674c033d3c61d059b/jackson-jaxrs-base-2.10.4.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/ross/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.module/jackson-module-jaxb-annotations/2.10.4/bda6d0667c8fc6e155d4c9dcf5001b0ff5409189/jackson-module-jaxb-annotations-2.10.4-sources.jar" kind="lib" path="/home/ross/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.module/jackson-module-jaxb-annotations/2.10.4/68364602aed552c0dcfc5743b393bad95c85b009/jackson-module-jaxb-annotations-2.10.4.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/ross/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.10.4/78cff6ff07eb6a0358873858e5b11463038e4bca/jackson-databind-2.10.4-sources.jar" kind="lib" path="/home/ross/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.10.4/76e9152e93d4cf052f93a64596f633ba5b1c8ed9/jackson-databind-2.10.4.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/ross/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.10.4/7651ebb0e7a457ea42dab8013af5d70acf2e0eb0/jackson-annotations-2.10.4-sources.jar" kind="lib" path="/home/ross/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.10.4/6ae6028aff033f194c9710ad87c224ccaadeed6c/jackson-annotations-2.10.4.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/ross/.gradle/caches/modules-2/files-2.1/jakarta.servlet/jakarta.servlet-api/4.0.3/e9d245a3171cbbfee13207df0f288035b1b25709/jakarta.servlet-api-4.0.3-sources.jar" kind="lib" path="/home/ross/.gradle/caches/modules-2/files-2.1/jakarta.servlet/jakarta.servlet-api/4.0.3/7c810f7bca93d109bac3323286b8e5ec6c394e12/jakarta.servlet-api-4.0.3.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/ross/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.ext/jersey-bean-validation/2.31/7c05798607273e157ddeb4ff465654451631d3c4/jersey-bean-validation-2.31-sources.jar" kind="lib" path="/home/ross/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.ext/jersey-bean-validation/2.31/410a433bbca649d972a50aa5ef53f4bdc463451b/jersey-bean-validation-2.31.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/ross/.gradle/caches/modules-2/files-2.1/org.hibernate.validator/hibernate-validator/6.1.5.Final/46e17e81dac3ffcd2cea55c3632757e4094fb164/hibernate-validator-6.1.5.Final-sources.jar" kind="lib" path="/home/ross/.gradle/caches/modules-2/files-2.1/org.hibernate.validator/hibernate-validator/6.1.5.Final/e5539b4b05c1520a9b4c0a120fd6e4984a8d5dc8/hibernate-validator-6.1.5.Final.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/ross/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.containers/jersey-container-servlet-core/2.31/80cb77c07b5ddbdf8468f451483faa32bbec7912/jersey-container-servlet-core-2.31-sources.jar" kind="lib" path="/home/ross/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.containers/jersey-container-servlet-core/2.31/23911098a6abb0ad528d3908b89d564e2f9ef6b1/jersey-container-servlet-core-2.31.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/ross/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.core/jersey-server/2.31/6ef62050eb1b6fa575ea9c5828feaca2d1911afc/jersey-server-2.31-sources.jar" kind="lib" path="/home/ross/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.core/jersey-server/2.31/c9d42ddd4f8342381889cf1e0df15c1777aaffd6/jersey-server-2.31.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/ross/.gradle/caches/modules-2/files-2.1/jakarta.validation/jakarta.validation-api/2.0.2/ef429a7f3bc2d2d1784a1135668a857a6aaedf31/jakarta.validation-api-2.0.2-sources.jar" kind="lib" path="/home/ross/.gradle/caches/modules-2/files-2.1/jakarta.validation/jakarta.validation-api/2.0.2/5eacc6522521f7eacb081f95cee1e231648461e7/jakarta.validation-api-2.0.2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/ross/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.core/jersey-client/2.31/c1f5866ddd737e5bb3c8bfffbd26924c9fc7e1a3/jersey-client-2.31-sources.jar" kind="lib" path="/home/ross/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.core/jersey-client/2.31/fc9d5bc22f679085f9e5754429bdcff46a6844fa/jersey-client-2.31.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/ross/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.media/jersey-media-jaxb/2.31/98618ab53c57b05706af77a70d77e68c4a732555/jersey-media-jaxb-2.31-sources.jar" kind="lib" path="/home/ross/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.media/jersey-media-jaxb/2.31/33a9245a4796a1cce9d8ac9decb219b35825e6c2/jersey-media-jaxb-2.31.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/ross/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.core/jersey-common/2.31/abc73448efb16c9e46b1b5d5a0214529afd2d465/jersey-common-2.31-sources.jar" kind="lib" path="/home/ross/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.core/jersey-common/2.31/b918c028c3c8c8b92a1ebb764571c369a85de04b/jersey-common-2.31.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/ross/.gradle/caches/modules-2/files-2.1/jakarta.ws.rs/jakarta.ws.rs-api/2.1.6/6c66d1fc6dfd1de469e831d2cab362ce07b2561d/jakarta.ws.rs-api-2.1.6-sources.jar" kind="lib" path="/home/ross/.gradle/caches/modules-2/files-2.1/jakarta.ws.rs/jakarta.ws.rs-api/2.1.6/1dcb770bce80a490dff49729b99c7a60e9ecb122/jakarta.ws.rs-api-2.1.6.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/ross/.gradle/caches/modules-2/files-2.1/net.sourceforge.argparse4j/argparse4j/0.8.1/779289966bb88f72751923bf2990ddde7f7a6507/argparse4j-0.8.1-sources.jar" kind="lib" path="/home/ross/.gradle/caches/modules-2/files-2.1/net.sourceforge.argparse4j/argparse4j/0.8.1/2c8241f84acf6c924bd75be0dbd68e8d74fbcd70/argparse4j-0.8.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/ross/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-servlet/9.4.29.v20200521/b77aa03de13feed97bf748ddce39f372f919ac55/jetty-servlet-9.4.29.v20200521-sources.jar" kind="lib" path="/home/ross/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-servlet/9.4.29.v20200521/cf3a0f63057cce87a8f0ca65906f3393be86a89c/jetty-servlet-9.4.29.v20200521.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/ross/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-security/9.4.29.v20200521/d338a87ac77670782ab4d226cf5e966378b9be91/jetty-security-9.4.29.v20200521-sources.jar" kind="lib" path="/home/ross/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-security/9.4.29.v20200521/401f979b090849ca789e6768806539099a5d7f4a/jetty-security-9.4.29.v20200521.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/ross/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-server/9.4.29.v20200521/6880b064de9a24e40930b6face58ddec448b4cd3/jetty-server-9.4.29.v20200521-sources.jar" kind="lib" path="/home/ross/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-server/9.4.29.v20200521/2c6590067589a0730223416c3157b1d4d121b95b/jetty-server-9.4.29.v20200521.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/ross/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-servlets/9.4.29.v20200521/aff38fb47589dedf21b43de0d57362703e227562/jetty-servlets-9.4.29.v20200521-sources.jar" kind="lib" path="/home/ross/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-servlets/9.4.29.v20200521/29039954069c686e44664e8a51ddb9d692ca4977/jetty-servlets-9.4.29.v20200521.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/ross/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-http/9.4.29.v20200521/cdd4f2d6b487acaae505e15dc6a2710aa4bc50b9/jetty-http-9.4.29.v20200521-sources.jar" kind="lib" path="/home/ross/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-http/9.4.29.v20200521/21b761eae53b8e5201fb8fdf03b9865116a29b47/jetty-http-9.4.29.v20200521.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/ross/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-io/9.4.29.v20200521/f206d10c0fd206aa3cb445a34c73561385691b05/jetty-io-9.4.29.v20200521-sources.jar" kind="lib" path="/home/ross/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-io/9.4.29.v20200521/ffadd07dc4e9d0783531922ed565b667ad95766e/jetty-io-9.4.29.v20200521.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/ross/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-util/9.4.29.v20200521/16a2f8ae1418960bbd4752acc80107f3338858d0/jetty-util-9.4.29.v20200521-sources.jar" kind="lib" path="/home/ross/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-util/9.4.29.v20200521/4866aa5271465f1d9035c4726209e4926fe1599c/jetty-util-9.4.29.v20200521.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/ross/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty.toolchain.setuid/jetty-setuid-java/1.0.4/afded4e6c5db490e908dcff0eedf9cb15bf145e5/jetty-setuid-java-1.0.4-sources.jar" kind="lib" path="/home/ross/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty.toolchain.setuid/jetty-setuid-java/1.0.4/4798bb61795d1e82ac5230fb97fde486b22efcf7/jetty-setuid-java-1.0.4.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/ross/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2-api/2.6.1/911d7e334b8b230b491bb130af8404fdb7a81059/hk2-api-2.6.1-sources.jar" kind="lib" path="/home/ross/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2-api/2.6.1/114bd7afb4a1bd9993527f52a08a252b5d2acac5/hk2-api-2.6.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/ross/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2-utils/2.6.1/91a2264ed6d909c44763fc807d22a19da87b84c9/hk2-utils-2.6.1-sources.jar" kind="lib" path="/home/ross/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2-utils/2.6.1/396513aa96c1d5a10aa4f75c4dcbf259a698d62d/hk2-utils-2.6.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/ross/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2.external/jakarta.inject/2.6.1/74132e0252fda12812a851695e488d3a862e09de/jakarta.inject-2.6.1-sources.jar" kind="lib" path="/home/ross/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2.external/jakarta.inject/2.6.1/8096ebf722902e75fbd4f532a751e514f02e1eb7/jakarta.inject-2.6.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/ross/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.10.4/45811022eca6cd0f7d45b10e1701ed81153a482a/jackson-core-2.10.4-sources.jar" kind="lib" path="/home/ross/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.10.4/8796585e716440d6dd5128b30359932a9eb74d0d/jackson-core-2.10.4.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/ross/.gradle/caches/modules-2/files-2.1/com.fasterxml/classmate/1.5.1/504edac38ff03cc5ce1d0391abb1416ffad58a99/classmate-1.5.1-sources.jar" kind="lib" path="/home/ross/.gradle/caches/modules-2/files-2.1/com.fasterxml/classmate/1.5.1/3fe0bed568c62df5e89f4f174c101eab25345b6c/classmate-1.5.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/ross/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-text/1.8/79ddc6e7b5ea247f5553f4e948863708dbdd5316/commons-text-1.8-sources.jar" kind="lib" path="/home/ross/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-text/1.8/879a6bde4c0537a25504c72ec7a94ba4099f469c/commons-text-1.8.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/ross/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.10/3dc6ed391f8199a461bfbdac4bf6d93f6e439de3/commons-lang3-3.10-sources.jar" kind="lib" path="/home/ross/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.10/e155460aaf5b464062a09c3923f089ce99128a17/commons-lang3-3.10.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/ross/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-access/1.2.3/ea52e9589590e75109b2abf8505b0f6413dda9f9/logback-access-1.2.3-sources.jar" kind="lib" path="/home/ross/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-access/1.2.3/e8a841cb796f6423c7afd8738df6e0e4052bf24a/logback-access-1.2.3.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/ross/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-core/1.2.3/3ebabe69eba0196af9ad3a814f723fb720b9101e/logback-core-1.2.3-sources.jar" kind="lib" path="/home/ross/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-core/1.2.3/864344400c3d4d92dfeb0a305dc87d953677c03c/logback-core-1.2.3.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/ross/.gradle/caches/modules-2/files-2.1/io.dropwizard.logback/logback-throttling-appender/1.1.0/2944e59b14e93ccacee1601bd5c50b90d33209c8/logback-throttling-appender-1.1.0-sources.jar" kind="lib" path="/home/ross/.gradle/caches/modules-2/files-2.1/io.dropwizard.logback/logback-throttling-appender/1.1.0/be8854383648bf88368029756d09e684de45263b/logback-throttling-appender-1.1.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/ross/.gradle/caches/modules-2/files-2.1/org.javassist/javassist/3.27.0-GA/e5dea2989ab81731501c670be0d1514512dbc13a/javassist-3.27.0-GA-sources.jar" kind="lib" path="/home/ross/.gradle/caches/modules-2/files-2.1/org.javassist/javassist/3.27.0-GA/f63e6aa899e15eca8fdaa402a79af4c417252213/javassist-3.27.0-GA.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/ross/.gradle/caches/modules-2/files-2.1/jakarta.annotation/jakarta.annotation-api/1.3.5/1ad35f11d17abb52426bfe15ea7b4c583795012/jakarta.annotation-api-1.3.5-sources.jar" kind="lib" path="/home/ross/.gradle/caches/modules-2/files-2.1/jakarta.annotation/jakarta.annotation-api/1.3.5/59eb84ee0d616332ff44aba065f3888cf002cd2d/jakarta.annotation-api-1.3.5.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/ross/.gradle/caches/modules-2/files-2.1/joda-time/joda-time/2.10.6/1d55c4f4a6a8e75da9ad5d26f5cfdc0d69527a45/joda-time-2.10.6-sources.jar" kind="lib" path="/home/ross/.gradle/caches/modules-2/files-2.1/joda-time/joda-time/2.10.6/26ef5b746eba68dffc7040c86e80b434e20e9b12/joda-time-2.10.6.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/ross/.gradle/caches/modules-2/files-2.1/com.helger/profiler/1.1.1/81a619f510e4ecf3ade4c84ea61d3ea09161ced4/profiler-1.1.1-sources.jar" kind="lib" path="/home/ross/.gradle/caches/modules-2/files-2.1/com.helger/profiler/1.1.1/c92a582728b09b47de38b1b97bd2e5b0c8cd553c/profiler-1.1.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/ross/.gradle/caches/modules-2/files-2.1/javax.servlet/javax.servlet-api/3.1.0/ab3976d4574c48d22dc1abf6a9e8bd0fdf928223/javax.servlet-api-3.1.0-sources.jar" kind="lib" path="/home/ross/.gradle/caches/modules-2/files-2.1/javax.servlet/javax.servlet-api/3.1.0/3cd63d075497751784b2fa84be59432f4905bf7c/javax.servlet-api-3.1.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/ross/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/osgi-resource-locator/1.0.3/2f01d4501f52f63016fe70f7aea79c19cccb8d44/osgi-resource-locator-1.0.3-sources.jar" kind="lib" path="/home/ross/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/osgi-resource-locator/1.0.3/de3b21279df7e755e38275137539be5e2c80dd58/osgi-resource-locator-1.0.3.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/ross/.gradle/caches/modules-2/files-2.1/org.glassfish/jakarta.el/3.0.3/1c224778fa1b2851e91400dd335f1a96a4b5b30/jakarta.el-3.0.3-sources.jar" kind="lib" path="/home/ross/.gradle/caches/modules-2/files-2.1/org.glassfish/jakarta.el/3.0.3/dab46ee1ee23f7197c13d7c40fce14817c9017df/jakarta.el-3.0.3.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/ross/.gradle/caches/modules-2/files-2.1/org.jboss.logging/jboss-logging/3.3.2.Final/a44f0f22bbd9ccb96952806e73f6cc16ef7d2f67/jboss-logging-3.3.2.Final-sources.jar" kind="lib" path="/home/ross/.gradle/caches/modules-2/files-2.1/org.jboss.logging/jboss-logging/3.3.2.Final/3789d00e859632e6c6206adc0c71625559e6e3b0/jboss-logging-3.3.2.Final.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/ross/.gradle/caches/modules-2/files-2.1/org.yaml/snakeyaml/1.26/1f369166f21abc8c07e618c2b9c0897f405d0999/snakeyaml-1.26-sources.jar" kind="lib" path="/home/ross/.gradle/caches/modules-2/files-2.1/org.yaml/snakeyaml/1.26/a78a8747147d2c5807683e76ec2b633e95c14fe9/snakeyaml-1.26.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/ross/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2.external/aopalliance-repackaged/2.6.1/8225e1c5c5615a447227ed9164e709be1e77802d/aopalliance-repackaged-2.6.1-sources.jar" kind="lib" path="/home/ross/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2.external/aopalliance-repackaged/2.6.1/b2eb0a83bcbb44cc5d25f8b18f23be116313a638/aopalliance-repackaged-2.6.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/ross/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-continuation/9.4.29.v20200521/4e158a303c6070d8302ccb1e6672642571f42685/jetty-continuation-9.4.29.v20200521-sources.jar" kind="lib" path="/home/ross/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-continuation/9.4.29.v20200521/855d117ee76c3009da297fb3e4479d50e47c6b86/jetty-continuation-9.4.29.v20200521.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/ross/.gradle/caches/modules-2/files-2.1/jakarta.xml.bind/jakarta.xml.bind-api/2.3.2/8f7b9baa75556d2c03371c7e4b45b484683c7d28/jakarta.xml.bind-api-2.3.2-sources.jar" kind="lib" path="/home/ross/.gradle/caches/modules-2/files-2.1/jakarta.xml.bind/jakarta.xml.bind-api/2.3.2/8d49996a4338670764d7ca4b85a1c4ccf7fe665d/jakarta.xml.bind-api-2.3.2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/ross/.gradle/caches/modules-2/files-2.1/jakarta.activation/jakarta.activation-api/1.2.1/6fe481428613e57af220e17b9ebf3475fb27efb8/jakarta.activation-api-1.2.1-sources.jar" kind="lib" path="/home/ross/.gradle/caches/modules-2/files-2.1/jakarta.activation/jakarta.activation-api/1.2.1/562a587face36ec7eff2db7f2fc95425c6602bc1/jakarta.activation-api-1.2.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/ross/.gradle/caches/modules-2/files-2.1/org.slf4j/log4j-over-slf4j/1.7.30/c4224768713e9cd702d86165ea6d8a6491472b06/log4j-over-slf4j-1.7.30-sources.jar" kind="lib" path="/home/ross/.gradle/caches/modules-2/files-2.1/org.slf4j/log4j-over-slf4j/1.7.30/69af1f8a7ef3040a2881f7ec105e0a86fb158ab2/log4j-over-slf4j-1.7.30.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/ross/.gradle/caches/modules-2/files-2.1/org.slf4j/jcl-over-slf4j/1.7.30/f2442e369a190089a2774920b5e73a4d4c1ef793/jcl-over-slf4j-1.7.30-sources.jar" kind="lib" path="/home/ross/.gradle/caches/modules-2/files-2.1/org.slf4j/jcl-over-slf4j/1.7.30/cd92524ea19d27e5b94ecd251e1af729cffdfe15/jcl-over-slf4j-1.7.30.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/ross/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.containers/jersey-container-servlet/2.31/61896dc2b97af2502ad5e908c41eac0ff4a57d90/jersey-container-servlet-2.31-sources.jar" kind="lib" path="/home/ross/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.containers/jersey-container-servlet/2.31/cb77f7f25ea435fc8a316787babbfeaf7dfb1b79/jersey-container-servlet-2.31.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/ross/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.ext/jersey-metainf-services/2.31/c93c192df787d8c0bb3177ff955426fc47b6a399/jersey-metainf-services-2.31-sources.jar" kind="lib" path="/home/ross/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.ext/jersey-metainf-services/2.31/541b3cd52662f408051488ee5d0cd0390af4115/jersey-metainf-services-2.31.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/ross/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.inject/jersey-hk2/2.31/f6bd10ea1dd102ec59e156412b147a6be06a3713/jersey-hk2-2.31-sources.jar" kind="lib" path="/home/ross/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.inject/jersey-hk2/2.31/bbc4b2a9192beceeaa50bf8a6ebaf6953fc9d4d/jersey-hk2-2.31.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/ross/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2-locator/2.6.1/73883e1a0effc4d1409743b515030a634f7b45c3/hk2-locator-2.6.1-sources.jar" kind="lib" path="/home/ross/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2-locator/2.6.1/9dedf9d2022e38ec0743ed44c1ac94ad6149acdd/hk2-locator-2.6.1.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
