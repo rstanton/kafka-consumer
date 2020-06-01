@@ -48,11 +48,15 @@ public class KafkaStockConsumerResource {
 	
 	@GET
 	@Timed
-	public List<Stock> getStockForStores() {
-		
+	@Path("/events")
+	public List<Stock> getStockEventsForStores() {
 		return  Arrays.asList(pollKafka());
 	}
 	
+	/**
+	 * Reads the raw stream of stock events
+	 * @return
+	 */
 	private Stock[] pollKafka() {
     	try {
     		 ConsumerRecords<String, String> records = consumer.poll(Duration.ofMillis(100));

@@ -99,6 +99,21 @@
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry sourcepath="/home/ross/.gradle/caches/modules-2/files-2.1/org.apache.kafka/kafka-streams/2.5.0/6642bff3a1b63c5beed99e1ad76af94e14f44a03/kafka-streams-2.5.0-sources.jar" kind="lib" path="/home/ross/.gradle/caches/modules-2/files-2.1/org.apache.kafka/kafka-streams/2.5.0/130e791dd36126e9bf352e52ecc3252da3470a1/kafka-streams-2.5.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/ross/.gradle/caches/modules-2/files-2.1/org.apache.kafka/connect-json/2.5.0/5484ba9143feca7d682fc806e1d3db71cad71ae0/connect-json-2.5.0-sources.jar" kind="lib" path="/home/ross/.gradle/caches/modules-2/files-2.1/org.apache.kafka/connect-json/2.5.0/4021d5d191fb327663934c33dced2744741148db/connect-json-2.5.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/ross/.gradle/caches/modules-2/files-2.1/org.apache.kafka/connect-api/2.5.0/1a2b3442626127bb2e8b63c6244fe872807aed8e/connect-api-2.5.0-sources.jar" kind="lib" path="/home/ross/.gradle/caches/modules-2/files-2.1/org.apache.kafka/connect-api/2.5.0/7c4a43c39bd1e3e732b8e002017e79cd2b9e1fb4/connect-api-2.5.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry sourcepath="/home/ross/.gradle/caches/modules-2/files-2.1/org.apache.kafka/kafka-clients/2.5.0/a5dae4cb2453063376a58be3a3771c4be087888d/kafka-clients-2.5.0-sources.jar" kind="lib" path="/home/ross/.gradle/caches/modules-2/files-2.1/org.apache.kafka/kafka-clients/2.5.0/dd97db58ba8dd184028e9dd5d7934dd654942232/kafka-clients-2.5.0.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
@@ -219,17 +234,22 @@
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry sourcepath="/home/ross/.gradle/caches/modules-2/files-2.1/org.rocksdb/rocksdbjni/5.18.3/f7e4c6b13c8cc0c27af84241cdacc5cebd8c11b/rocksdbjni-5.18.3-sources.jar" kind="lib" path="/home/ross/.gradle/caches/modules-2/files-2.1/org.rocksdb/rocksdbjni/5.18.3/6d3f8594ab85cc3c473fa97a5d5cb94cf5568e2b/rocksdbjni-5.18.3.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry sourcepath="/home/ross/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-classic/1.2.3/cfd5385e0c5ed1c8a5dce57d86e79cf357153a64/logback-classic-1.2.3-sources.jar" kind="lib" path="/home/ross/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-classic/1.2.3/7c4f3c474fb2c041d8028740440937705ebb473a/logback-classic-1.2.3.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry sourcepath="/home/ross/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/2.10.4/4da42585005906e6e5e6d6f0976138c0c09c3d1a/jackson-datatype-jsr310-2.10.4-sources.jar" kind="lib" path="/home/ross/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/2.10.4/de00203e6fee3493c8978a0064a3dda2e8373545/jackson-datatype-jsr310-2.10.4.jar">
+	<classpathentry sourcepath="/home/ross/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/2.10.4/c768b8bd2d9cb455610be865384ae093ca7a1397/jackson-datatype-jdk8-2.10.4-sources.jar" kind="lib" path="/home/ross/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/2.10.4/e3ce6f756d4d7ec6f4272212eb3f25bdea71d89f/jackson-datatype-jdk8-2.10.4.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry sourcepath="/home/ross/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/2.10.4/c768b8bd2d9cb455610be865384ae093ca7a1397/jackson-datatype-jdk8-2.10.4-sources.jar" kind="lib" path="/home/ross/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/2.10.4/e3ce6f756d4d7ec6f4272212eb3f25bdea71d89f/jackson-datatype-jdk8-2.10.4.jar">
+	<classpathentry sourcepath="/home/ross/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/2.10.4/4da42585005906e6e5e6d6f0976138c0c09c3d1a/jackson-datatype-jsr310-2.10.4-sources.jar" kind="lib" path="/home/ross/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/2.10.4/de00203e6fee3493c8978a0064a3dda2e8373545/jackson-datatype-jsr310-2.10.4.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>

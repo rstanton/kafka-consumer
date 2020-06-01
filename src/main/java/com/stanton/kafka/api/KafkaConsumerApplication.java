@@ -9,6 +9,9 @@ public class KafkaConsumerApplication extends Application<KakfaConsumerConfigura
 	public void run(KakfaConsumerConfiguration configuration, Environment environment) throws Exception {	
 		final KafkaStockConsumerResource stock = new KafkaStockConsumerResource(configuration);
 		environment.jersey().register(stock);
+		
+		final StoreResource stores = new StoreResource(configuration);
+		environment.jersey().register(stores);
 	}
 	
 	public static void main(String[] args) {
