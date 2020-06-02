@@ -12,16 +12,27 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
 import org.apache.kafka.common.serialization.Serdes;
+import org.apache.kafka.common.serialization.Serdes.LongSerde;
+import org.apache.kafka.common.utils.Bytes;
 import org.apache.kafka.streams.KafkaStreams;
 import org.apache.kafka.streams.KeyValue;
 import org.apache.kafka.streams.StoreQueryParameters;
 import org.apache.kafka.streams.StreamsBuilder;
 import org.apache.kafka.streams.StreamsConfig;
+import org.apache.kafka.streams.kstream.Aggregator;
+import org.apache.kafka.streams.kstream.ForeachAction;
+import org.apache.kafka.streams.kstream.Initializer;
 import org.apache.kafka.streams.kstream.KGroupedStream;
+import org.apache.kafka.streams.kstream.KStream;
 import org.apache.kafka.streams.kstream.KTable;
 import org.apache.kafka.streams.kstream.KeyValueMapper;
+import org.apache.kafka.streams.kstream.Materialized;
 import org.apache.kafka.streams.kstream.Reducer;
+import org.apache.kafka.streams.kstream.internals.MaterializedInternal;
+import org.apache.kafka.streams.processor.StateStore;
 import org.apache.kafka.streams.state.KeyValueIterator;
+import org.apache.kafka.streams.state.KeyValueStore;
+import org.apache.kafka.streams.state.QueryableStoreType;
 import org.apache.kafka.streams.state.QueryableStoreTypes;
 import org.apache.kafka.streams.state.ReadOnlyKeyValueStore;
 
@@ -47,7 +58,7 @@ public class StoreResource {
 	
 	public StoreResource(KakfaConsumerConfiguration config) {
 		this.config = config;
-		
+
 		Properties props = new Properties();
 		props.put(StreamsConfig.APPLICATION_ID_CONFIG, "store-stream-processor");
 		props.put(StreamsConfig.BOOTSTRAP_SERVERS_CONFIG, config.getBootstrapBrokers());
@@ -55,7 +66,8 @@ public class StoreResource {
 		props.put(StreamsConfig.DEFAULT_VALUE_SERDE_CLASS_CONFIG, Serdes.String().getClass());
 		
 		StreamsBuilder builder = new StreamsBuilder();
-		build(builder);
+		//build(builder);
+		buildStockMaterializedView(builder);
 		
 		streams = new KafkaStreams(builder.build(), props);
 		streams.start();
@@ -71,21 +83,53 @@ public class StoreResource {
 			KeyValueIterator<String, Long> values = store.all();
 			while(values.hasNext()) {
 				KeyValue<String, Long> kv = values.next();
-				logger.info(kv.key);
+				logger.info(kv.key +": "+kv.value);
 			}
 		}
-		else {
-			KTable<String, Long> storeTable = gStream.count();
-			
-			logger.info("Got Table name "+storeTable.queryableStoreName());
-			if(storeTable.queryableStoreName()!=null) {
-				logger.info("Table name: "+storeTable.queryableStoreName());
-				
-				viewName = storeTable.queryableStoreName();
-			}
-		}
-		
+	
 		return Arrays.asList(new Store());
+	}
+	
+	private void buildStockMaterializedView(StreamsBuilder builder) {
+		try {
+			//Group the stream based on the store and EAN
+			KGroupedStream<String, String> stockStream = builder.<String,String>stream(config.getTopic()).groupBy(new KeyValueMapper<String, String, String>(){
+				@Override
+				public String apply(String key, String value) {
+					Stock stock = json.fromJson(value, Stock.class);
+					return stock.getStoreCode()+"-"+stock.getEAN();
+				}
+			});
+			
+			KTable<String, Double> aggregateStock = stockStream.aggregate(
+			new Initializer<Double>() {
+				@Override
+				public Double apply() {
+					return 0.0;
+				}
+				
+			}, new Aggregator<String, String, Double>(){
+				@Override
+				public Double apply(String key, String value, Double aggregate) {
+					Stock stock = json.fromJson(value,  Stock.class);
+					return aggregate+stock.getQty();
+				}
+				
+			},Materialized.<String, Double, KeyValueStore<Bytes, byte[]>>as("store-stock-table").withValueSerde(Serdes.Double()));
+		
+		    ReadOnlyKeyValueStore<String, Double> view = streams.store(StoreQueryParameters.fromNameAndType(aggregateStock.queryableStoreName(), QueryableStoreTypes.<String, Double>keyValueStore()));
+		    KeyValueIterator<String, Double> it = view.all();
+		    while(it.hasNext()) {
+		    	KeyValue<String, Double> kv = it.next();
+		    	logger.info("Store - EAN "+kv.key+" has "+kv.value+" stock");
+		    }
+		    
+			logger.info("Store Stock Table materialized as "+aggregateStock.queryableStoreName());
+		}
+		catch(Exception e) {
+			e.printStackTrace();
+			System.exit(-1);
+		}
 	}
 	
 	private void build(StreamsBuilder builder) {
@@ -97,20 +141,28 @@ public class StoreResource {
 				@Override
 				public String apply(String key, String value) {
 					Stock stock = json.fromJson(value, Stock.class);
-					logger.info("Processing Stream, new Key "+stock.getStoreCode());
+					//tlogger.info("Processing Stream, new Key "+stock.getStoreCode());
 					return stock.getStoreCode();
 				}
 
 			});
 			
-			KTable<String, Long> storeTable = gStream.count();
-			
-			logger.info("Got Table name "+storeTable.queryableStoreName());
-			if(storeTable.queryableStoreName()!=null) {
-				logger.info("Table name: "+storeTable.queryableStoreName());
+			/**KStream<String, LongviewName> storeStream = gStream.count().toStream();
+			storeStream.foreach(new ForeachAction<String, Long>(){
+
+				@Override
+				public void apply(String key, Long value) {
+					logger.info("Count for "+key +": "+value);
+				}
 				
-				viewName = storeTable.queryableStoreName();
-			}
+			});**/
+			
+			Materialized<String,Long, KeyValueStore<Bytes, byte[]>> storeCount = Materialized.as("store-stock-record-count");
+			
+			KTable<String, Long> recordCount = gStream.count(storeCount);
+			
+			logger.info("Queryable Store Name: "+recordCount.queryableStoreName());	
+			viewName = recordCount.queryableStoreName();
 			
 		}
 		catch(Exception e) {
