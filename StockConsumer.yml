@@ -5,4 +5,3 @@ server:
   applicationConnectors:
     - type: http
       port: 9000
-      bindHost: 0.0.0.0

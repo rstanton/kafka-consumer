@@ -20,8 +20,8 @@ public class KafkaConsumerApplication extends Application<KakfaConsumerConfigura
     
 	@Override
 	public void run(KakfaConsumerConfiguration configuration, Environment environment) throws Exception {	
-		final StockEventsResource stock = new StockEventsResource(configuration);
-		environment.jersey().register(stock);
+		//final StockEventsResource stock = new StockEventsResource(configuration);
+		//environment.jersey().register(stock);
 		
 		final StoreStockResource stores = new StoreStockResource(configuration);
 		environment.jersey().register(stores);
