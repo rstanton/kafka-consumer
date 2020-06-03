@@ -23,8 +23,8 @@ public class KafkaConsumerApplication extends Application<KakfaConsumerConfigura
 		//final StockEventsResource stock = new StockEventsResource(configuration);
 		//environment.jersey().register(stock);
 		
-		final StoreStockResource stores = new StoreStockResource(configuration);
-		environment.jersey().register(stores);
+		//final StoreStockResource stores = new StoreStockResource(configuration);
+		//environment.jersey().register(stores);
 	}
 	
 	public static void main(String[] args) {
