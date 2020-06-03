@@ -4,5 +4,4 @@ RUN apk add git
 RUN git clone https://github.com/rstanton/kafka-consumer.git
 WORKDIR /kafka-consumer
 EXPOSE 9000/tcp
-RUN ./gradlew build
-ENTRYPOINT ./gradlew run --args stock
+ENTRYPOINT ./gradlew run server ./StockConsumer.yml
