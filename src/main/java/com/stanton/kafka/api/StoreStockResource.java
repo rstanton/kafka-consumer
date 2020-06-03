@@ -40,23 +40,24 @@ import com.codahale.metrics.annotation.Timed;
 import com.google.gson.Gson;
 
 /**
- * API that reads the KAFKA stock stream to determine what stores exist by grouping and then aggregating the stream
+ * Event consumer that builds a materialised view of stock by store & EAN
  * @author ross
  *
  */
 @Path("/stores")
 @Produces(MediaType.APPLICATION_JSON)
-public class StoreResource {
+public class StoreStockResource {
 	private Gson json = new Gson();
 	private KafkaStreams streams;
 	private KGroupedStream<String, String> gStream;
+	private KTable stockTable; 
 	
 	public String viewName;
 	
 	private KakfaConsumerConfiguration config;
 	private static final Logger logger = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
 	
-	public StoreResource(KakfaConsumerConfiguration config) {
+	public StoreStockResource(KakfaConsumerConfiguration config) {
 		this.config = config;
 
 		Properties props = new Properties();
@@ -71,11 +72,14 @@ public class StoreResource {
 		
 		streams = new KafkaStreams(builder.build(), props);
 		streams.start();
+
 	}
 	
 	@GET
 	@Timed
+	@Path("/stock")
 	public List<Store> getStores(){
+		getStockForStoreEAN(null, null);
 		
 		if(viewName!=null) {
 			ReadOnlyKeyValueStore<String, Long> store =  streams.store(StoreQueryParameters.fromNameAndType(viewName, QueryableStoreTypes.keyValueStore()));
@@ -90,6 +94,19 @@ public class StoreResource {
 		return Arrays.asList(new Store());
 	}
 	
+	private void getStockForStoreEAN(String store, String ean) {
+		logger.info("Store Stock Table materialized as "+stockTable.queryableStoreName());
+		
+		if(stockTable.queryableStoreName()!=null) {
+			ReadOnlyKeyValueStore<String, Double> view = streams.store(StoreQueryParameters.fromNameAndType(stockTable.queryableStoreName(), QueryableStoreTypes.<String, Double>keyValueStore()));
+			KeyValueIterator<String, Double> it = view.all();
+			while(it.hasNext()) {
+				KeyValue<String, Double> kv = it.next();
+				logger.info("Store - EAN "+kv.key+" has "+kv.value+" stock");
+			}
+		}
+	}
+	
 	private void buildStockMaterializedView(StreamsBuilder builder) {
 		try {
 			//Group the stream based on the store and EAN
@@ -101,7 +118,7 @@ public class StoreResource {
 				}
 			});
 			
-			KTable<String, Double> aggregateStock = stockStream.aggregate(
+			stockTable = stockStream.aggregate(
 			new Initializer<Double>() {
 				@Override
 				public Double apply() {
@@ -116,15 +133,6 @@ public class StoreResource {
 				}
 				
 			},Materialized.<String, Double, KeyValueStore<Bytes, byte[]>>as("store-stock-table").withValueSerde(Serdes.Double()));
-		
-		    ReadOnlyKeyValueStore<String, Double> view = streams.store(StoreQueryParameters.fromNameAndType(aggregateStock.queryableStoreName(), QueryableStoreTypes.<String, Double>keyValueStore()));
-		    KeyValueIterator<String, Double> it = view.all();
-		    while(it.hasNext()) {
-		    	KeyValue<String, Double> kv = it.next();
-		    	logger.info("Store - EAN "+kv.key+" has "+kv.value+" stock");
-		    }
-		    
-			logger.info("Store Stock Table materialized as "+aggregateStock.queryableStoreName());
 		}
 		catch(Exception e) {
 			e.printStackTrace();

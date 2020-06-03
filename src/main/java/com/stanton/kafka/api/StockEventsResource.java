@@ -24,13 +24,13 @@ import com.codahale.metrics.annotation.Timed;
 import com.google.gson.Gson;
 
 
-@Path("/stock")
+@Path("/events")
 @Produces(MediaType.APPLICATION_JSON)
-public class KafkaStockConsumerResource {
+public class StockEventsResource {
 	private Consumer<String, String> consumer;
 	private static final Logger logger = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
 	
-	public KafkaStockConsumerResource(KakfaConsumerConfiguration config) {
+	public StockEventsResource(KakfaConsumerConfiguration config) {
 		Properties props = new Properties();
 		props.setProperty("bootstrap.servers", config.getBootstrapBrokers());
 		props.setProperty("group.id", config.getConsumerGroup());
@@ -41,15 +41,13 @@ public class KafkaStockConsumerResource {
 		props.setProperty("value.deserializer", "org.apache.kafka.common.serialization.StringDeserializer");
 		
 		consumer = new KafkaConsumer<>(props);
-		Map<String, List<PartitionInfo>> topics = consumer.listTopics();
 		 
 		consumer.subscribe(Arrays.asList(config.getTopic()));
 	}
 	
 	@GET
 	@Timed
-	@Path("/events")
-	public List<Stock> getStockEventsForStores() {
+	public List<Stock> getStockEvents() {
 		return  Arrays.asList(pollKafka());
 	}
 	
