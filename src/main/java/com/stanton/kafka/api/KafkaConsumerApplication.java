@@ -1,10 +1,23 @@
 package com.stanton.kafka.api;
 
 import io.dropwizard.Application;
+import io.dropwizard.configuration.EnvironmentVariableSubstitutor;
+import io.dropwizard.configuration.SubstitutingSourceProvider;
+import io.dropwizard.setup.Bootstrap;
 import io.dropwizard.setup.Environment;
 
 public class KafkaConsumerApplication extends Application<KakfaConsumerConfiguration> {
+    @Override
+    public void initialize(Bootstrap<KakfaConsumerConfiguration> bootstrap) {
+        // Enable variable substitution with environment variables
+        bootstrap.setConfigurationSourceProvider(
+                new SubstitutingSourceProvider(bootstrap.getConfigurationSourceProvider(),
+                                                   new EnvironmentVariableSubstitutor(false)
+                )
+        );
 
+    }
+    
 	@Override
 	public void run(KakfaConsumerConfiguration configuration, Environment environment) throws Exception {	
 		final StockEventsResource stock = new StockEventsResource(configuration);

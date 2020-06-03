@@ -1,6 +1,6 @@
-bootstrapBrokers: localhost:29092
-topic: stock
-consumerGroup: stock
+bootstrapBrokers: ${KAFKA_BOOTSTRAP_SERVERS}
+topic: ${KAFKA_TOPIC}
+consumerGroup: ${KAFKA_CONSUMER_GROUP}
 server:
   applicationConnectors:
     - type: http
