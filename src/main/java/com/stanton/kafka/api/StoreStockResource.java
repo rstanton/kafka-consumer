@@ -79,8 +79,7 @@ public class StoreStockResource {
 	@Timed
 	@Path("/stock")
 	public List<Store> getStores(){
-		getStockForStoreEAN(null, null);
-		
+				
 		if(viewName!=null) {
 			ReadOnlyKeyValueStore<String, Long> store =  streams.store(StoreQueryParameters.fromNameAndType(viewName, QueryableStoreTypes.keyValueStore()));
 			
@@ -133,6 +132,8 @@ public class StoreStockResource {
 				}
 				
 			},Materialized.<String, Double, KeyValueStore<Bytes, byte[]>>as("store-stock-table").withValueSerde(Serdes.Double()));
+			
+			viewName = stockTable.queryableStoreName();
 		}
 		catch(Exception e) {
 			e.printStackTrace();
