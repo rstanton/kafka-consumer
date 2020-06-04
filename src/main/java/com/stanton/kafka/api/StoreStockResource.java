@@ -8,6 +8,7 @@ import java.util.logging.Logger;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
+import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
@@ -50,14 +51,17 @@ public class StoreStockResource {
 	private Gson json = new Gson();
 	private KafkaStreams streams;
 	private KGroupedStream<String, String> gStream;
-	private KTable stockTable; 
+	private KTable<String, Double> stockTable; 
+	private ReadOnlyKeyValueStore<String, Double> view;
 	
 	public String viewName;
-	
+
 	private KakfaConsumerConfiguration config;
-	private static final Logger logger = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
+	private static Logger logger;
 	
 	public StoreStockResource(KakfaConsumerConfiguration config) {
+		logger = Logger.getLogger(this.getClass().getName());
+		
 		this.config = config;
 
 		Properties props = new Properties();
@@ -68,45 +72,66 @@ public class StoreStockResource {
 		
 		StreamsBuilder builder = new StreamsBuilder();
 		//build(builder);
-		buildStockMaterializedView(builder);
+		stockTable = buildStockMaterializedView(builder);
 		
 		streams = new KafkaStreams(builder.build(), props);
 		streams.start();
+		
+		try {
+			while(streams.state()!=KafkaStreams.State.RUNNING) {
+				Thread.sleep(100);
+			}
+
+			view = streams.store(StoreQueryParameters.fromNameAndType(stockTable.queryableStoreName(), QueryableStoreTypes.<String, Double>keyValueStore()));
+		}
+		catch(Exception e) {
+			e.printStackTrace();
+			System.exit(-1);
+		}
 
 	}
 	
+	/**
+	 * Actually needs to return something useful
+	 * @return
+	 */
 	@GET
 	@Timed
 	@Path("/stock")
 	public List<Store> getStores(){
-				
-		if(viewName!=null) {
-			ReadOnlyKeyValueStore<String, Double> store =  streams.store(StoreQueryParameters.fromNameAndType(viewName, QueryableStoreTypes.keyValueStore()));
-			
-			KeyValueIterator<String, Double> values = store.all();
+
+		if(view!=null) {
+			KeyValueIterator<String, Double> values = view.all();
 			while(values.hasNext()) {
 				KeyValue<String, Double> kv = values.next();
 				logger.info(kv.key +": "+kv.value);
 			}
-		}
 	
-		return Arrays.asList(new Store());
+			return Arrays.asList(new Store());
+		}
+		return null;
 	}
 	
-	private void getStockForStoreEAN(String store, String ean) {
-		logger.info("Store Stock Table materialized as "+stockTable.queryableStoreName());
-		
-		if(stockTable.queryableStoreName()!=null) {
-			ReadOnlyKeyValueStore<String, Double> view = streams.store(StoreQueryParameters.fromNameAndType(stockTable.queryableStoreName(), QueryableStoreTypes.<String, Double>keyValueStore()));
-			KeyValueIterator<String, Double> it = view.all();
-			while(it.hasNext()) {
-				KeyValue<String, Double> kv = it.next();
-				logger.info("Store - EAN "+kv.key+" has "+kv.value+" stock");
-			}
-		}
+	/** 
+	 * Returns the stock quantity for a given Store & EAN
+	 * 
+	 * @param store
+	 * @param ean
+	 */
+	@GET
+	@Timed
+	@Path("/{storeid}/{ean}")
+	public Double getStockForStoreEAN(@PathParam("storeid") String store, @PathParam("ean")String ean) {
+		logger.info("Getting stock for "+store+" and "+ean);
+		return view.get(store+"-"+ean);
 	}
 	
-	private void buildStockMaterializedView(StreamsBuilder builder) {
+	/**
+	 * 
+	 * @param builder
+	 * @return
+	 */
+	private KTable<String, Double> buildStockMaterializedView(StreamsBuilder builder) {
 		try {
 			//Group the stream based on the store and EAN
 			KGroupedStream<String, String> stockStream = builder.<String,String>stream(config.getTopic()).groupBy(new KeyValueMapper<String, String, String>(){
@@ -133,50 +158,12 @@ public class StoreStockResource {
 				
 			},Materialized.<String, Double, KeyValueStore<Bytes, byte[]>>as("store-stock-table").withValueSerde(Serdes.Double()));
 			
-			viewName = stockTable.queryableStoreName();
+			return stockTable;
 		}
 		catch(Exception e) {
 			e.printStackTrace();
-			System.exit(-1);
-		}
-	}
-	
-	private void build(StreamsBuilder builder) {
-		try {
-			// Group by Store Code
-			logger.info("Starting to build views");
-			
-			gStream = builder.<String, String>stream(config.getTopic()).groupBy(new KeyValueMapper<String, String, String>() {
-				@Override
-				public String apply(String key, String value) {
-					Stock stock = json.fromJson(value, Stock.class);
-					//tlogger.info("Processing Stream, new Key "+stock.getStoreCode());
-					return stock.getStoreCode();
-				}
-
-			});
-			
-			/**KStream<String, LongviewName> storeStream = gStream.count().toStream();
-			storeStream.foreach(new ForeachAction<String, Long>(){
-
-				@Override
-				public void apply(String key, Long value) {
-					logger.info("Count for "+key +": "+value);
-				}
-				
-			});**/
-			
-			Materialized<String,Long, KeyValueStore<Bytes, byte[]>> storeCount = Materialized.as("store-stock-record-count");
-			
-			KTable<String, Long> recordCount = gStream.count(storeCount);
-			
-			logger.info("Queryable Store Name: "+recordCount.queryableStoreName());	
-			viewName = recordCount.queryableStoreName();
-			
-		}
-		catch(Exception e) {
-			e.printStackTrace();
-			System.exit(-1);
+			return null;
 		}
 	}
 }
+
