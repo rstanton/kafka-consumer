@@ -81,11 +81,11 @@ public class StoreStockResource {
 	public List<Store> getStores(){
 				
 		if(viewName!=null) {
-			ReadOnlyKeyValueStore<String, Long> store =  streams.store(StoreQueryParameters.fromNameAndType(viewName, QueryableStoreTypes.keyValueStore()));
+			ReadOnlyKeyValueStore<String, Double> store =  streams.store(StoreQueryParameters.fromNameAndType(viewName, QueryableStoreTypes.keyValueStore()));
 			
-			KeyValueIterator<String, Long> values = store.all();
+			KeyValueIterator<String, Double> values = store.all();
 			while(values.hasNext()) {
-				KeyValue<String, Long> kv = values.next();
+				KeyValue<String, Double> kv = values.next();
 				logger.info(kv.key +": "+kv.value);
 			}
 		}
